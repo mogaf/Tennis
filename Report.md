@@ -48,3 +48,5 @@ The system is considered solved when we maintain an average score of .50 over th
 ![Score][image2]
 
 If you want to see how the trained agent performs, load [Tennis-SharedCritic-TrainedModel.ipynb](Tennis-SharedCritic-TrainedModel.ipynb)
+
+The algorithm could be further improved by ,for example, changing the sampling of the steps used for learning. Currenly we sample uniformly from the Replay Buffer, but we could do prioritized experince replay, which means that we give higher weight more meaningful transitions, thus sampling them more frequently.
